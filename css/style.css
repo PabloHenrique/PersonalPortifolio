@@ -7,7 +7,7 @@
     --header-height: 3rem;
 
     --main-color: 168;
-    --first-color: hsl(var(--main-color), 69%, 61%);
+    --first-color: hsl(var(--main-color), 69%, 61%);/*#57e0c5*/
     --first-color-second: hsl(var(--main-color), 69%, 61%);
     --first-color-alt: hsl(var(--main-color), 57%, 53%);
     --first-color-lighter: hsl(var(--main-color), 92%, 85%);
@@ -102,18 +102,18 @@ img{
     padding: 2rem 0 4rem;
 }
 
-.section_title{
+.section-title{
     font-size: var(--h1-font-size);
 }
 
-.section_subtitle{
+.section-subtitle{
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
 
-.section_title,
-.section_subtitle{
+.section-title,
+.section-subtitle{
     text-align: center;
 }
 
@@ -137,6 +137,35 @@ img{
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+}
+
+.keyframe{
+    border-right: 1px solid rgba(58, 57, 57, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing{
+    animation: blink 500ms infinite normal,
+    type 4s steps(48) 1s normal both;
+}
+
+@keyframes type{
+    from{
+        width: 0;
+    }
+    to{
+        width: 7.5em;
+    }
+}
+
+@keyframes blink{
+    from{
+        border-right-color:rgba(58, 57, 57, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
 }
 
 /* ============================= NAVBAR ============================= */
@@ -332,3 +361,42 @@ img{
     align-items: center;
 }
 
+/* ============================= ABOUT ============================= */
+.about-img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about-description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about-info-name{
+    font-size: var(--small-font-size);
+}
+
+.about-info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about-info-title,
+.about-info-name{
+    display: block;
+    text-align: center;
+}
+
+.about-button{
+    display: flex;
+    justify-content: center;
+}
