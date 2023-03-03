@@ -9,7 +9,7 @@
     --main-color: 168;
     --first-color: hsl(var(--main-color), 69%, 61%);/*#57e0c5*/
     --first-color-second: hsl(var(--main-color), 69%, 61%);
-    --first-color-alt: hsl(var(--main-color), 57%, 53%);
+    --first-color-alt: hsl(var(--main-color), 57%, 53%);/*#43CBB0*/
     --first-color-lighter: hsl(var(--main-color), 92%, 85%);
     --title-color: hsl(var(--main-color), 8%, 15%);
     --text-color: hsl(var(--main-color), 8%, 45%);
@@ -83,7 +83,6 @@ h1, h2, h3, h4{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
-
 
 ul{
     list-style: none;

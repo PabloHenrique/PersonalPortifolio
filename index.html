@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>Pablo Nadai</title>
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav-logo">Pablo</a>
@@ -150,6 +152,9 @@
                 <div class="skills-container container grid">
                     <div>
                         <!-- ----------------- FrontEnd ----------------- -->
+                        <div class="canvaFront">
+                            <canvas id="chart"></canvas>
+                        </div>
                         <div class="skills-content skills-open">
                             <div class="skills-header">
                                 <i class="uil uil-brackets-curly skills-icon"></i>                              
@@ -400,6 +405,7 @@
             </section>
 
         </main>
+        <script src="./js/chart.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
