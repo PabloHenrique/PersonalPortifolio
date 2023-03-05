@@ -282,6 +282,8 @@ img{
 }
 
 .home-blob-img{
+    border-radius: 50%;
+    box-shadow: 1px 1px var(--first-color-lighter);
     width: 170px;
 }
 
@@ -291,13 +293,14 @@ img{
 
 .home-title{
     font-size: var(--big-font-size);
+    margin-bottom: var(--mb-1);
 }
 
 .home-subtitle{
     font-size: var(--h3-font-size);
     color: var(--text-color);
     font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
+    margin-bottom: var(--mb-1);
 }
 
 .home-description{
@@ -436,17 +439,6 @@ img{
     transition: .4s;
 }
 
-.skills-title{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
-}
-
-.skills-name{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-}
-
 .skills-bar,
 .skills-percentage{
     height: 5px;
@@ -462,49 +454,11 @@ img{
     background-color: var(--first-color);
 }
 
-.skills-list{
-    row-gap: 1.5rem;
-    padding-left: 2.7rem;
-}
+/* CHARTs */
 
-.skills-html,
-.skills-python,
-.skills-git,
-.skills-mysql{
-    width: 90%;
-}
-
-.skills-css,
-.skills-figma{
-    width: 80%;
-}
-
-.skills-js,
-.skills-php,
-.skills-adobe{
-    width: 75%;
-}
-
-.skills-react{
-    width: 70%;
-}
-
-.skills-node{
-    width: 60%;
-}
-
-.skills-close .skills-list{
-    height: 0;
-    overflow: hidden;
-}
-
-.skills-open .skills-list{
-    height: max-content;
-    margin-bottom: var(--mb-2-5);
-}
-
-.skills-open .skills-arrow{
-    transform: rotate(-180deg);
+.canva{
+    align-items: center;
+    margin-bottom: var(--mb-2);
 }
 
 /* ============================= QUALIFICATION ============================= */

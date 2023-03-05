@@ -79,25 +79,11 @@
                             </a>
                         </div>
                         <div class="home-img">
-                            <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home-blob-img" x='12' y='18' xlink:href="./src/img/perfil.png"/>
-                                </g>
-                            </svg>
+                            <img src="./src/img/profile-pic.png" alt="Foto de Perfil" class="home-blob-img">
                         </div>
                         <div class="home-data">
                             <h1 class="home-title keyframe typing">Pablo H. Nadai</h1>
-                            <h3 class="home-subtitle">Web Developer - Sistem Analist 💻</h3>
+                            <h3 class="home-subtitle">Web Developer & Sistem Analist 💻</h3>
                             <p class="home-description">Apaixonado por criar e tranformar experiências de usuário em interfaces incríveis!</p>
                             <a href="#" class="button button-flex">
                                 Entre em contato <i class="uil uil-message home-send"></i>
@@ -152,146 +138,44 @@
                 <div class="skills-container container grid">
                     <div>
                         <!-- ----------------- FrontEnd ----------------- -->
-                        <div class="canvaFront">
-                            <canvas id="chart"></canvas>
-                        </div>
-                        <div class="skills-content skills-open">
+                        <div class="skills-content">
                             <div class="skills-header">
                                 <i class="uil uil-brackets-curly skills-icon"></i>                              
                                 <div>
                                     <h1 class="skills-title">Frontend</h1>
                                     <span class="skills-subtitle">Conhecimentos: </span>
                                 </div>
-                                <i class="uil uil-angle-down skills-arrow"></i>
                             </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">HTML</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-html"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">CSS</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-css"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">JavaScript</h3>
-                                        <span class="skills-number">75%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-js"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">React</h3>
-                                        <span class="skills-number">70%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-react"></span>
-                                    </div>
-                                </div>
+                            <div class="canva" style="position: relative; height: 30vh; width:80vw">
+                                <canvas id="chartFront"></canvas>
                             </div>
                         </div>
                         <!-- ----------------- Backend ----------------- -->
-                        <div class="skills-content skills-close">
+                        <div class="skills-content">
                             <div class="skills-header">
                                 <i class="uil uil-server-network-alt skills-icon"></i>
                                 <div>
                                     <h1 class="skills-title">Backend</h1>
                                     <span class="skills-subtitle">Conhecimentos: </span>
                                 </div>
-                                <i class="uil uil-angle-down skills-arrow"></i>
                             </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">PHP</h3>
-                                        <span class="skills-number">75%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-php"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">Python</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-python"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">NodeJS</h3>
-                                        <span class="skills-number">60%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-node"></span>
-                                    </div>
-                                </div>
+                            <div class="canva" style="position: relative; height: 30vh; width:80vw">
+                                <canvas id="chartBack"></canvas>
                             </div>
                         </div>
                     </div>
                     <div>
                         <!-- ----------------- Outras tecnologias ----------------- -->
-                        <div class="skills-content skills-close">
+                        <div class="skills-content">
                             <div class="skills-header">
                                 <i class="uil uil-desktop-cloud-alt skills-icon"></i>
                                 <div>
                                     <h1 class="skills-title">Outras tecnologias</h1>
                                     <span class="skills-subtitle">Conhecimentos: </span>
                                 </div>
-                                <i class="uil uil-angle-down skills-arrow"></i>
                             </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">MySQL</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-mysql"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">Figma</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-figma"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">Git</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-git"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-title">
-                                        <h3 class="skills-name">AdobeXD</h3>
-                                        <span class="skills-number">75%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-percentage skills-adobe"></span>
-                                    </div>
-                                </div>
+                            <div class="canva" style="position: relative; height: 30vh; width:80vw">
+                                <canvas id="chartOthers"></canvas>
                             </div>
                         </div>
                     </div>
