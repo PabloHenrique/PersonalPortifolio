@@ -66,6 +66,17 @@
 
             <section class="home section" id="home">
                 <div class="home-container container grid">
+                    <div class="home-config" id="home-config">
+                        <button class="home-config-icon" onclick="ShowThemes('home-config-options')"><i class="uil uil-setting"></i></button>
+                        <div class="home-config-options" id="home-config-options">
+                            <p class="home-config-text">Temas: </p>
+                            <div class="home-config-colors">
+                                <span class="home-config-color yellow" onclick="setStyleYellow()"></span>
+                                <span class="home-config-color basic" onclick="setStyleBasic()"></span>
+                                <span class="home-config-color blue" onclick="setStyleBlue()"></span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="home-content grid">
                         <div class="home-social">
                             <a href="https://www.linkedin.com/in/pablo-henrique-nadai/" class="home-social-icon" target="_blank">
@@ -79,7 +90,7 @@
                             </a>
                         </div>
                         <div class="home-img">
-                            <img src="./src/img/profile-pic.png" alt="Foto de Perfil" class="home-blob-img">
+                            <img src="./src/img/perfil.png" alt="Foto de Perfil" class="home-blob-img">
                         </div>
                         <div class="home-data">
                             <h1 class="home-title keyframe typing">Pablo H. Nadai</h1>
@@ -294,6 +305,164 @@
                                         Fev/2022 - Fev/2023
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services section" id="services">
+                <h2 class="section-title">Serviços</h2>
+                <span class="section-subtitle">Como posso ajudar?</span>
+                <div class="services-container container grid">
+                    <!-- Front -->
+                    <div class="services-content">
+                        <div>
+                            <i class="uil uil-arrow services-icon"></i>
+                            <h3 class="services-title">Dev <br> Front-End</h3>
+                        </div>
+
+                        <span class="button button-flex button-small button-link services-button">
+                            Ver mais
+                            <i class="uil uil-arrow-right button-icon"></i>
+                        </span>
+
+                        <div class="services-modal">
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title">Dev Front-End</h4>
+                                <i class="uil uil-times services-modal-close"></i>
+                                <ul class="services-modal-services grid">
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Tranformar ideias em sites através dos códigos</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Implementar soluções digitais diversas</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Telas interativas e adaptadas a diferentes dispositivos</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ux Ui -->
+                    <div class="services-content">
+                        <div>
+                            <i class="uil uil-web-grid services-icon"></i>
+                            <h3 class="services-title">Ui/Ux <br> Designer</h3>
+                        </div>
+
+                        <span class="button button-flex button-small button-link services-button">
+                            Ver mais
+                            <i class="uil uil-arrow-right button-icon"></i>
+                        </span>
+
+                        <div class="services-modal">
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title">Ui/Ux Designer</h4>
+                                <i class="uil uil-times services-modal-close"></i>
+                                <ul class="services-modal-services grid">
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Pesquisa de usuário e persona</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Usualibilidade simples e precisa</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Layout e organização do conteúdo</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Teste de usuário e prototipagem</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analista -->
+                    <div class="services-content">
+                        <div>
+                            <i class="uil uil-presentation-lines-alt services-icon"></i>
+                            <h3 class="services-title">Analista<br> de Sistemas</h3>
+                        </div>
+
+                        <span class="button button-flex button-small button-link services-button">
+                            Ver mais
+                            <i class="uil uil-arrow-right button-icon"></i>
+                        </span>
+
+                        <div class="services-modal">
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title">Analista de Sistemas</h4>
+                                <i class="uil uil-times services-modal-close"></i>
+                                <ul class="services-modal-services grid">
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Estudo de viabilidade de projeto</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Ações que facilitam os processos</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Modelagem e criação de protótipo</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Prevenção de falhas e erros</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design -->
+                    <div class="services-content">
+                        <div>
+                            <i class="uil uil-palette services-icon"></i>
+                            <h3 class="services-title">Designer<br>de Projetos</h3>
+                        </div>
+
+                        <span class="button button-flex button-small button-link services-button">
+                            Ver mais
+                            <i class="uil uil-arrow-right button-icon"></i>
+                        </span>
+
+                        <div class="services-modal">
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title">Designer de Projetos</h4>
+                                <i class="uil uil-times services-modal-close"></i>
+                                <ul class="services-modal-services grid">
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Montar landing pages</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Desenhar telas de aplicativos</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Construir biblioteca de componentes</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Documentar cores, estilos e tipografia de um projeto</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-square services-modal-icon"></i>
+                                        <p class="services-modal-text">Fazer protótipos navegáveis e interativos</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
