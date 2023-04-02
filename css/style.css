@@ -498,6 +498,7 @@ img{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
+    margin-top: var(--mb-0-5);
 }
 
 .qualification-calendar{
@@ -521,15 +522,14 @@ img{
     transform: translate(6px, -7px);
 }
 
-/*
 .qualification [data-content]{
     display: none;
-}*/
+}
 
-.qualification-active [data-content]{
+.qualification-active[data-content]{
     display: block;
 }
 
-.qualification-button.qualification-active{
+.qualification-button .qualification-active{
     color: var(--first-color);
 }
