@@ -1,4 +1,4 @@
-console.log("Olá!")
+console.log("Olá! Seja bem vindo aqui também!")
 
 // ============================= EXIBIR E OCULTAR MENU =============================
 
@@ -80,7 +80,7 @@ const ctxOthers = document.getElementById('chartOthers');
       labels: ['HTML', 'CSS', 'JavaScript', 'React'],
       datasets: [{
         label: 'Percentual de Skills',
-        data: [90, 80, 75, 70],
+        data: [100, 95, 75, 70],
         backgroundColor: 'hsla(168, 69%, 61%, 0.4)',
         hoverBackgroundColor: 'hsl(168, 69%, 61%)',
         barThickness: 18,
@@ -100,7 +100,7 @@ const ctxOthers = document.getElementById('chartOthers');
       labels: ['PHP', 'Python', 'C++', 'NodeJS'],
       datasets: [{
         label: 'Percentual de Skills',
-        data: [75, 90, 70, 60],
+        data: [75, 100, 70, 60],
         backgroundColor: 'hsla(168, 69%, 61%, 0.4)',
         hoverBackgroundColor: 'hsl(168, 69%, 61%)',
         barThickness: 18,
@@ -120,7 +120,7 @@ const ctxOthers = document.getElementById('chartOthers');
       labels: ['MySQL', 'Figma', 'Git', 'AdobeXD'],
       datasets: [{
         label: 'Percentual de Skills',
-        data: [90, 80, 90, 75],
+        data: [100, 80, 100, 75],
         backgroundColor: 'hsla(168, 69%, 61%, 0.4)',
         hoverBackgroundColor: 'hsl(168, 69%, 61%)',
         barThickness: 18,
@@ -155,4 +155,58 @@ modalCloses.forEach((modalClose) =>{
             modalView.classList.remove('active-modal')
         })
     })
+})
+
+// ============================= PORTIFÓLIO =============================
+let swiper = new Swiper(".portifolio-container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+
+// ============================= DARK / LIGHT =============================
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'uil-sun'
+
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+});
+
+// ========================== REVEAL ANIMATION =============================
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home__data, .home__img,
+            .about__data, .about__img,
+            .services__content, .menu__content,
+            .app__data, .app__img,
+            .contact__data, .contact__button,
+            .footer__content`, {
+    interval: 200
 })

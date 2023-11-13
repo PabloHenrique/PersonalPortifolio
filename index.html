@@ -4,20 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="./css/style.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>Pablo Nadai</title>
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <header class="header" id="header">
+        <header class="header scroll-header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav-logo">Pablo</a>
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list grid">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">
+                            <a href="#home" class="nav-link active-link">
                                 <i class="uil uil-estate nav-icon"></i>
                                 Home
                             </a>
@@ -29,25 +31,25 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#qualification" class="nav-link">
+                            <a href="#skills" class="nav-link">
                                 <i class="uil uil-book-open nav-icon"></i>
                                 Habilidades
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#services" class="nav-link">
                                 <i class="uil uil-file-bookmark-alt nav-icon"></i>
                                 Serviços
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#portifolio" class="nav-link">
                                 <i class="uil uil-scenery nav-icon"></i>
                                 Portifólio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#contact" class="nav-link">
                                 <i class="uil uil-envelope-edit nav-icon"></i>
                                 Contate-me
                             </a>
@@ -56,27 +58,19 @@
                     <i class="uil uil-times nav-close" id="nav-close"></i>
                 </div>
                 <div class="nav-btns">
+                    <!-- THEME -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
                     <div class="nav-toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
                 </div>
             </nav>
         </header>
+        
         <main class="main">
 
             <section class="home section" id="home">
                 <div class="home-container container grid">
-                    <div class="home-config" id="home-config">
-                        <button class="home-config-icon" onclick="ShowThemes('home-config-options')"><i class="uil uil-setting"></i></button>
-                        <div class="home-config-options" id="home-config-options">
-                            <p class="home-config-text">Temas: </p>
-                            <div class="home-config-colors">
-                                <span class="home-config-color yellow" onclick="setStyleYellow()"></span>
-                                <span class="home-config-color basic" onclick="setStyleBasic()"></span>
-                                <span class="home-config-color blue" onclick="setStyleBlue()"></span>
-                            </div>
-                        </div>
-                    </div>
                     <div class="home-content grid">
                         <div class="home-social">
                             <a href="https://www.linkedin.com/in/pablo-henrique-nadai/" class="home-social-icon" target="_blank">
@@ -96,7 +90,7 @@
                             <h1 class="home-title keyframe typing">Pablo H. Nadai</h1>
                             <h3 class="home-subtitle">Web Developer & Sistem Analist 💻</h3>
                             <p class="home-description">Apaixonado por criar e tranformar experiências de usuário em interfaces incríveis!</p>
-                            <a href="#" class="button button-flex">
+                            <a href="https://wa.me//5514996283799?text=Olá!" class="button button-flex">
                                 Entre em contato <i class="uil uil-message home-send"></i>
                             </a>
                         </div>
@@ -122,19 +116,19 @@
                         <div class="about-info">
                             <div>
                                 <span class="about-info-title">05+</span>
-                                <span class="about-info-name">Cursos <br> Alura e web curses</span>
+                                <span class="about-info-name">Web <br> curses</span>
                             </div>
                             <div>
                                 <span class="about-info-title">03+</span>
                                 <span class="about-info-name">Técnico <br> em DS</span>
                             </div>
                             <div>
-                                <span class="about-info-title">01+</span>
+                                <span class="about-info-title">02+</span>
                                 <span class="about-info-name">Tecnólogo <br> em ADS</span>
                             </div>
                         </div>
                         <div class="about-button">
-                            <a download="" href="./src/curriculoPH.pdf" class="button button-flex">
+                            <a download="" href="./src/curriculo_PH.pdf" class="button button-flex">
                                 Download CV
                                 <i class="uil uil-file-download button-icon"></i>
                             </a>
@@ -278,7 +272,7 @@
                             <!-- QUALITY 1 -->
                             <div class="qualification-data">
                                 <div>
-                                    <h3 class="qualification-title">Analista em Suporte Técnico</h3>
+                                    <h3 class="qualification-title">Supervisor de Suporte Técnico</h3>
                                     <span class="qualification-subtitle">Contabilivre - Marília/SP</span>
                                     <div class="qualification-calendar">
                                         <i class="uil uil-calendar-alt"></i>
@@ -468,8 +462,175 @@
                     </div>
                 </div>
             </section>
+
+            <section class="portifolio section" id="portifolio">
+                <h2 class="section-title">Portifólio</h2>
+                <span class="section-subtitle">Meus projetos</span>
+                <div class="portifolio-container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Projeto 01 -->
+                        <div class="portifolio-content grid swiper-slide">
+                            <img src="./src/img/port/tcc.png" alt="" class="portifolio-img">
+                            <div class="portifolio-data">
+                                <h3 class="portifolio-title">Carteira de Vacinas - TCC</h3>
+                                <p class="portifolio-desc">Este é um projeto de carteira de vacinação digital em tecnologias web que permite aos usuários armazenar e gerenciar informações sobre suas vacinas.</p>
+                                <a href="" class="button button-flex button-small portifolio-button">
+                                    Visitar
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Projeto 02 -->
+                        <div class="portifolio-content grid swiper-slide">
+                            <img src="./src/img/port/embreve.svg" alt="" class="portifolio-img">
+                            <div class="portifolio-data">
+                                <h3 class="portifolio-title">Em manutenção</h3>
+                                <p class="portifolio-desc">Gostaríamos de informar que em breve estaremos postando novos projetos em nossa plataforma. Fique atento(a) aos nossos próximos anúncios e atualizações!</p>
+                                <a href="" class="button button-flex button-small portifolio-button">
+                                    Visitar
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Projeto 03 -->
+                        <div class="portifolio-content grid swiper-slide">
+                            <img src="./src/img/port/embreve.svg" alt="" class="portifolio-img">
+                            <div class="portifolio-data">
+                                <h3 class="portifolio-title">Em manutenção</h3>
+                                <p class="portifolio-desc">Gostaríamos de informar que em breve estaremos postando novos projetos em nossa plataforma. Fique atento(a) aos nossos próximos anúncios e atualizações!</p>
+                                <a href="" class="button button-flex button-small portifolio-button">
+                                    Visitar
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Projeto 04 -->
+                        <div class="portifolio-content grid swiper-slide">
+                            <img src="./src/img/port/embreve.svg" alt="" class="portifolio-img">
+                            <div class="portifolio-data">
+                                <h3 class="portifolio-title">Em manutenção</h3>
+                                <p class="portifolio-desc">Gostaríamos de informar que em breve estaremos postando novos projetos em nossa plataforma. Fique atento(a) aos nossos próximos anúncios e atualizações!</p>
+                                <a href="" class="button button-flex button-small portifolio-button">
+                                    Visitar
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Projeto 05 -->
+                        <div class="portifolio-content grid swiper-slide">
+                            <img src="./src/img/port/embreve.svg" alt="" class="portifolio-img">
+                            <div class="portifolio-data">
+                                <h3 class="portifolio-title">Em manutenção</h3>
+                                <p class="portifolio-desc">Gostaríamos de informar que em breve estaremos postando novos projetos em nossa plataforma. Fique atento(a) aos nossos próximos anúncios e atualizações!</p>
+                                <a href="" class="button button-flex button-small portifolio-button">
+                                    Visitar
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portifolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portifolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Entre em contato</h2>
+                <span class="section-subtitle">Posso ajudar?</span>
+                <div class="contact-container container grid">
+                    <div>
+                        <div class="contact-information">
+                            <i class="uil uil-phone contact-icon"></i>
+                            <div>
+                                <h3 class="contact-title">Telefone</h3>
+                                <span class="contact-subtitle">14 99628-3799</span>
+                            </div>
+                        </div>
+                        <div class="contact-information">
+                            <i class="uil uil-envelope contact-icon"></i>
+                            <div>
+                                <h3 class="contact-title">E-mail</h3>
+                                <span class="contact-subtitle">pablohenriquenadai@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-information">
+                            <i class="uil uil-linkedin-alt contact-icon"></i>
+                            <div>
+                                <h3 class="contact-title">Linkedin</h3>
+                                <span class="contact-subtitle">in/pablo-henrique-nadai/</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <form action="" class="contact-form grid">
+                        <div class="contact-inputs grid">
+                            <div class="contact-content">
+                                <label for="" class="contact-label">Nome</label>
+                                <input type="text" class="contact-input">
+                            </div>
+                            <div class="contact-content">
+                                <label for="" class="contact-label">E-mail</label>
+                                <input type="text" class="contact-input">
+                            </div>
+                        </div>
+                        <div class="contact-content">
+                            <label for="" class="contact-label">Projeto</label>
+                            <input type="text" class="contact-input">
+                        </div>
+                        <div class="contact-content">
+                            <label for="" class="contact-label">Mensagem</label>
+                            <textarea class="contact-input" name="" id="" cols="0" rows="7"></textarea>
+                        </div>
+                        <div>
+                            <a href="" class="button button-flex">Enviar
+                                <i class="uil uil-message button-icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
+
+        <footer class="footer">
+            <div class="footer-bg">
+                <div class="footer-container container grid">
+                    <div>
+                        <h1 class="footer-title">Pablo Henrique</h1>
+                        <span class="footer-subtitle">Front Developer</span>
+                    </div>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#services" class="footer-link">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#portifolio" class="footer-link">Portifólio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer-link">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/pablo-henrique-nadai/" class="footer-social" target="_blank">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/PabloHenrique" class="footer-social" target="_blank">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="mailto:pablohenriquenadai@gmail.com" class="footer-social" target="_blank">
+                            <i class="uil uil-envelopes"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer-copy">Feito com ❤️ &#169;Pablo Nadai</p>
+            </div>
+        </footer>
         <script src="./js/chart.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
