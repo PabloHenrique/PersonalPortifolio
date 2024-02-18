@@ -6,9 +6,9 @@
     --header-height: 3rem;
 
     --main-color: 168;
-    --first-color: hsl(var(--main-color), 69%, 61%);
+    --first-color: hsl(var(--main-color), 69%, 43%);
     /*#57e0c5*/
-    --first-color-second: hsl(var(--main-color), 69%, 61%);
+    --first-color-second: hsl(var(--main-color), 69%, 43%);
     --first-color-alt: hsl(var(--main-color), 57%, 53%);
     /*#43CBB0*/
     --first-color-lighter: hsl(var(--main-color), 92%, 85%);
@@ -174,7 +174,7 @@ button {
 .header {
     width: 100%;
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
@@ -314,7 +314,7 @@ button {
 @media screen and (max-width: 767px) {
     .nav-menu {
         position: fixed;
-        bottom: -100%;
+        top: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -350,7 +350,7 @@ button {
 .nav-close {
     position: absolute;
     right: 1.3em;
-    bottom: .5rem;
+    top: .5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--first-color);
@@ -361,7 +361,7 @@ button {
 }
 
 .show-menu {
-    bottom: 0;
+    top: 0;
 }
 
 .active-link {
